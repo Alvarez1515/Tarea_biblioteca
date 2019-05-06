@@ -1,0 +1,33 @@
+uuid: ca40061a-1a34-47d5-90be-3e5630e811eb
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_categoria
+    - node.type.libro
+    - taxonomy.vocabulary.libros_deteriorados
+    - taxonomy.vocabulary.libros_usados
+    - taxonomy.vocabulary.nuevo
+id: node.libro.field_categoria
+field_name: field_categoria
+entity_type: node
+bundle: libro
+label: Categoria
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      libros_deteriorados: libros_deteriorados
+      nuevo: nuevo
+      libros_usados: libros_usados
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: libros_deteriorados
+field_type: entity_reference

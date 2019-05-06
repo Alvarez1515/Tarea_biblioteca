@@ -1,0 +1,50 @@
+uuid: 7b2e7237-8780-43e5-9e4e-3ecac22c85fc
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.libro.body
+    - field.field.node.libro.field_autor
+    - field.field.node.libro.field_categoria
+    - field.field.node.libro.field_portada
+    - field.field.node.libro.field_titulo
+    - image.style.thumbnail
+    - node.type.libro
+  module:
+    - image
+    - user
+id: node.libro.teaser
+targetEntityType: node
+bundle: libro
+mode: teaser
+content:
+  field_autor:
+    type: string
+    weight: 2
+    region: content
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+  field_portada:
+    type: image
+    weight: 0
+    region: content
+    label: hidden
+    settings:
+      image_style: thumbnail
+      image_link: ''
+    third_party_settings: {  }
+  field_titulo:
+    type: string
+    weight: 1
+    region: content
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+hidden:
+  body: true
+  field_categoria: true
+  links: true

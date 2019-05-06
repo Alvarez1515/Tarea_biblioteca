@@ -1,0 +1,8 @@
+uuid: 633ac4d1-cfe4-43f3-8cc8-87bebd7cad83
+langcode: en
+status: true
+dependencies: {  }
+name: 'Libros Deteriorados'
+vid: libros_deteriorados
+description: 'Libros que necesitan ser reparados '
+weight: 0

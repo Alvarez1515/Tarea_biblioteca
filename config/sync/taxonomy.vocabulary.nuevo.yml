@@ -1,0 +1,8 @@
+uuid: 6bacd40d-1adc-4327-8a8b-d8e35bd28ebe
+langcode: en
+status: true
+dependencies: {  }
+name: 'Libros Nuevos'
+vid: nuevo
+description: 'Libros que no han sido utilizados '
+weight: 0

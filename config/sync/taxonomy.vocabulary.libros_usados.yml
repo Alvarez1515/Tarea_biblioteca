@@ -1,0 +1,8 @@
+uuid: 52d259b2-555f-43c5-949f-0bf90d0b1492
+langcode: en
+status: true
+dependencies: {  }
+name: 'Libros Usados'
+vid: libros_usados
+description: 'Libros que ya estan a la disposicion del usuario'
+weight: 0

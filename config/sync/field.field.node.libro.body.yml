@@ -1,0 +1,22 @@
+uuid: cfcbe779-057a-4013-886e-139dee172827
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.libro
+  module:
+    - text
+id: node.libro.body
+field_name: body
+entity_type: node
+bundle: libro
+label: Descripcion
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+field_type: text_with_summary
