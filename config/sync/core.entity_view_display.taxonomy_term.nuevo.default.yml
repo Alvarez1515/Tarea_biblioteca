@@ -1,0 +1,31 @@
+uuid: a85d7b4c-0a9b-4482-866a-f59816370f82
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.nuevo.field_mediafile
+    - taxonomy.vocabulary.nuevo
+  module:
+    - text
+id: taxonomy_term.nuevo.default
+targetEntityType: taxonomy_term
+bundle: nuevo
+mode: default
+content:
+  description:
+    label: hidden
+    type: text_default
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_mediafile:
+    type: entity_reference_entity_view
+    weight: 1
+    label: above
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    region: content
+hidden: {  }

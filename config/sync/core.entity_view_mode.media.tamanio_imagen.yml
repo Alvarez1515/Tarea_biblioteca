@@ -1,0 +1,10 @@
+uuid: 6fad4aef-2f08-4f85-9a0f-7b960342696a
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+id: media.tamanio_imagen
+label: Tamanio_Imagen
+targetEntityType: media
+cache: true

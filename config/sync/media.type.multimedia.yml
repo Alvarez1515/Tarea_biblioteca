@@ -1,0 +1,17 @@
+uuid: bb462576-1a79-49de-8b5d-ab00c7bc46ee
+langcode: en
+status: true
+dependencies: {  }
+id: multimedia
+label: Multimedia
+description: 'Son los archivos media type'
+source: 'oembed:video'
+queue_thumbnail_downloads: false
+new_revision: false
+source_configuration:
+  thumbnails_directory: 'public://oembed_thumbnails'
+  providers:
+    - YouTube
+  source_field: field_media_oembed_video_1
+field_map:
+  type: name

@@ -1,0 +1,29 @@
+uuid: cb08d518-f9d9-4424-a4a2-9fd6c95702af
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_mediafile
+    - media.type.remote_video
+    - taxonomy.vocabulary.nuevo
+id: taxonomy_term.nuevo.field_mediafile
+field_name: field_mediafile
+entity_type: taxonomy_term
+bundle: nuevo
+label: MediaFile
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      remote_video: remote_video
+    sort:
+      field: name
+      direction: ASC
+    auto_create: true
+    auto_create_bundle: ''
+field_type: entity_reference

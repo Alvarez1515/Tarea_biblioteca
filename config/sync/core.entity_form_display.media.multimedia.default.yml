@@ -1,0 +1,53 @@
+uuid: 39825069-dfce-4281-b93b-34bf2dc744e0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.media.multimedia.field_media_oembed_video_1
+    - media.type.multimedia
+  module:
+    - media
+    - path
+id: media.multimedia.default
+targetEntityType: media
+bundle: multimedia
+mode: default
+content:
+  created:
+    type: datetime_timestamp
+    weight: 10
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_media_oembed_video_1:
+    type: oembed_textfield
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  path:
+    type: path
+    weight: 30
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 100
+    region: content
+    third_party_settings: {  }
+  uid:
+    type: entity_reference_autocomplete
+    weight: 5
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    region: content
+    third_party_settings: {  }
+hidden:
+  name: true
