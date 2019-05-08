@@ -1,0 +1,14 @@
+uuid: a7ac95ba-42e4-47ae-87ac-941ed43c49ed
+langcode: en
+status: true
+dependencies: {  }
+name: image500x500
+label: image500x500
+effects:
+  63db9c11-aa0e-4f4f-85c0-4080e56ae225:
+    uuid: 63db9c11-aa0e-4f4f-85c0-4080e56ae225
+    id: image_resize
+    weight: 1
+    data:
+      width: 500
+      height: 500

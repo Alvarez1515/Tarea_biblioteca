@@ -1,22 +1,27 @@
-uuid: 50c39713-6a3b-476f-9ee7-8313db966aa9
+uuid: 497a5920-9b89-4642-bb86-c88cb6eb0e45
 langcode: en
 status: true
 dependencies:
   module:
     - file
+    - image
     - media
-_core:
-  default_config_hash: JCHoh95CpUeBx9ch24Tmi6ru0nwmNz8xWVH4Qs7RnTg
-id: media.field_media_audio_file
-field_name: field_media_audio_file
+id: media.field_media_image_1
+field_name: field_media_image_1
 entity_type: media
-type: file
+type: image
 settings:
+  default_image:
+    uuid: null
+    alt: ''
+    title: ''
+    width: null
+    height: null
   target_type: file
   display_field: false
   display_default: false
   uri_scheme: public
-module: file
+module: image
 locked: false
 cardinality: 1
 translatable: true

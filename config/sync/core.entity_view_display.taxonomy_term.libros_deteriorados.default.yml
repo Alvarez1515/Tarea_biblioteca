@@ -1,0 +1,31 @@
+uuid: 35d01b9c-fe26-4cda-beee-2e460d5b13c4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.libros_deteriorados.field_image
+    - taxonomy.vocabulary.libros_deteriorados
+  module:
+    - text
+id: taxonomy_term.libros_deteriorados.default
+targetEntityType: taxonomy_term
+bundle: libros_deteriorados
+mode: default
+content:
+  description:
+    label: hidden
+    type: text_default
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_image:
+    type: entity_reference_entity_view
+    weight: 1
+    label: above
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    region: content
+hidden: {  }

@@ -1,54 +1,36 @@
-uuid: b5ff19d5-4fd9-4ab4-8a3c-b1f1f7130f75
+uuid: e043494d-bdab-4be8-bbd9-cd975ef0864a
 langcode: en
 status: true
 dependencies:
   config:
-    - field.field.media.multimedia.field_media_oembed_video_1
+    - field.field.media.multimedia.field_media_image_1
     - image.style.thumbnail
     - media.type.multimedia
   module:
     - image
-    - media
-    - user
 id: media.multimedia.default
 targetEntityType: media
 bundle: multimedia
 mode: default
 content:
-  created:
-    label: hidden
-    type: timestamp
+  name:
+    type: string
     weight: 0
     region: content
-    settings:
-      date_format: medium
-      custom_date_format: ''
-      timezone: ''
-    third_party_settings: {  }
-  field_media_oembed_video_1:
-    type: oembed
-    weight: 6
     label: above
     settings:
-      max_width: 0
-      max_height: 0
+      link_to_entity: false
     third_party_settings: {  }
-    region: content
   thumbnail:
     type: image
-    weight: 5
+    weight: 1
     label: hidden
     settings:
       image_style: thumbnail
       image_link: ''
     region: content
     third_party_settings: {  }
-  uid:
-    label: hidden
-    type: author
-    weight: 0
-    region: content
-    settings: {  }
-    third_party_settings: {  }
 hidden:
-  name: true
+  created: true
+  field_media_image_1: true
+  uid: true

@@ -1,8 +1,9 @@
-uuid: c784a5ff-c56c-4fe5-b3cd-2ec5142a7de1
+uuid: 5a2e1764-89e4-4e40-86c8-81cf53fde14d
 langcode: en
 status: true
 dependencies:
   config:
+    - core.entity_view_mode.node.tamanio250x250
     - field.field.node.libro.body
     - field.field.node.libro.field_autor
     - field.field.node.libro.field_categoria
@@ -14,10 +15,10 @@ dependencies:
     - image
     - text
     - user
-id: node.libro.default
+id: node.libro.tamanio250x250
 targetEntityType: node
 bundle: libro
-mode: default
+mode: tamanio250x250
 content:
   body:
     label: hidden

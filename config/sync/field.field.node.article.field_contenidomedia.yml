@@ -1,0 +1,28 @@
+uuid: d9646dd3-8bc0-4971-86a9-c9356699d8da
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_contenidomedia
+    - media.type.multimedia
+    - node.type.article
+id: node.article.field_contenidomedia
+field_name: field_contenidomedia
+entity_type: node
+bundle: article
+label: ContenidoMedia
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      multimedia: multimedia
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

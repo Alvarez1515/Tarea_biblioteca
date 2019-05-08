@@ -1,17 +1,18 @@
-uuid: bb462576-1a79-49de-8b5d-ab00c7bc46ee
+uuid: 4d7ef6a4-7d39-44fb-84b1-0b5edfa39ba1
 langcode: en
 status: true
 dependencies: {  }
 id: multimedia
 label: Multimedia
-description: 'Son los archivos media type'
-source: 'oembed:video'
+description: 'Para practica 1'
+source: image
 queue_thumbnail_downloads: false
 new_revision: false
 source_configuration:
-  thumbnails_directory: 'public://oembed_thumbnails'
-  providers:
-    - YouTube
-  source_field: field_media_oembed_video_1
+  source_field: field_media_image_1
 field_map:
-  type: name
+  name: name
+  mimetype: name
+  filesize: name
+  width: name
+  height: name

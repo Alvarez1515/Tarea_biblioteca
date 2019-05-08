@@ -1,0 +1,55 @@
+uuid: 2f46833d-1840-4b3b-89f5-baae1b952ecf
+langcode: en
+status: true
+dependencies:
+  config:
+    - entity_browser.browser.e_browser
+    - field.field.taxonomy_term.libros_deteriorados.field_image
+    - taxonomy.vocabulary.libros_deteriorados
+  module:
+    - entity_browser
+    - path
+    - text
+id: taxonomy_term.libros_deteriorados.default
+targetEntityType: taxonomy_term
+bundle: libros_deteriorados
+mode: default
+content:
+  description:
+    type: text_textarea
+    weight: 0
+    region: content
+    settings:
+      placeholder: ''
+      rows: 5
+    third_party_settings: {  }
+  field_image:
+    weight: 31
+    settings:
+      entity_browser: e_browser
+      field_widget_display: label
+      field_widget_edit: true
+      field_widget_remove: true
+      selection_mode: selection_append
+      field_widget_display_settings:
+        view_mode: tamanio_imagen
+      field_widget_replace: false
+      open: false
+    third_party_settings: {  }
+    type: entity_browser_entity_reference
+    region: content
+  name:
+    type: string_textfield
+    weight: -5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  path:
+    type: path
+    weight: 30
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden: {  }

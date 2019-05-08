@@ -9,7 +9,7 @@ dependencies:
     - field.field.node.libro.field_categoria
     - field.field.node.libro.field_portada
     - field.field.node.libro.field_titulo
-    - image.style.thumbnail
+    - image.style.image250x250
     - node.type.libro
   module:
     - image
@@ -33,7 +33,7 @@ content:
     region: content
     label: hidden
     settings:
-      image_style: thumbnail
+      image_style: image250x250
       image_link: ''
     third_party_settings: {  }
   field_titulo:

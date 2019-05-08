@@ -1,10 +1,10 @@
-uuid: 451f639d-a5ec-43be-a4fc-0060903c37cc
+uuid: 40e63a78-830d-4025-b827-f44f5cf817b1
 langcode: en
 status: true
 dependencies:
   module:
     - media
-id: media.tamanio_imagen
-label: Tamanio_Imagen
+id: media.tamanio250x250
+label: Tamanio250x250
 targetEntityType: media
 cache: true

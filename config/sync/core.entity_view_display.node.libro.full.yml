@@ -9,6 +9,7 @@ dependencies:
     - field.field.node.libro.field_categoria
     - field.field.node.libro.field_portada
     - field.field.node.libro.field_titulo
+    - image.style.image500x500
     - node.type.libro
   module:
     - image
@@ -46,7 +47,7 @@ content:
     weight: 0
     label: above
     settings:
-      image_style: ''
+      image_style: image500x500
       image_link: ''
     third_party_settings: {  }
     type: image

@@ -1,0 +1,10 @@
+uuid: 67a36e6c-bcc6-45c3-b4a5-8fe7482b1596
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.tamanio250x250
+label: Tamanio250x250
+targetEntityType: node
+cache: true

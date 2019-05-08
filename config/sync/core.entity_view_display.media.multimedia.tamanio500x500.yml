@@ -1,28 +1,28 @@
-uuid: e7a80923-8a51-4bcd-9c7e-b5ae9c11b5d9
+uuid: ba71c3ea-682c-472d-9f21-605bce10cd30
 langcode: en
 status: true
 dependencies:
   config:
-    - core.entity_view_mode.media.full
+    - core.entity_view_mode.media.tamanio500x500
     - field.field.media.multimedia.field_media_image_1
-    - image.style.thumbnail
+    - image.style.image500x500
     - media.type.multimedia
   module:
     - image
-id: media.multimedia.full
+id: media.multimedia.tamanio500x500
 targetEntityType: media
 bundle: multimedia
-mode: full
+mode: tamanio500x500
 content:
   field_media_image_1:
-    weight: 2
+    type: image
+    weight: 1
+    region: content
     label: above
     settings:
-      image_style: ''
+      image_style: image500x500
       image_link: ''
     third_party_settings: {  }
-    type: image
-    region: content
   name:
     type: string
     weight: 0
@@ -31,15 +31,7 @@ content:
     settings:
       link_to_entity: false
     third_party_settings: {  }
-  thumbnail:
-    type: image
-    weight: 1
-    label: hidden
-    settings:
-      image_style: thumbnail
-      image_link: ''
-    region: content
-    third_party_settings: {  }
 hidden:
   created: true
+  thumbnail: true
   uid: true
